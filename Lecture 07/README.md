@@ -1,4 +1,6 @@
-# 🚀 Understanding Your First Go Program in Depth
+## 🚀Lecture 007: **Understanding Your First Go Program in Depth!**
+
+---
 
 ## The Anatomy of a Go Program
 
@@ -10,16 +12,18 @@ import "fmt"
 func main() {
     fmt.Println("Hello world!")
 }
+
 ```
 
 ## 1️⃣ Package Declaration - The Entry Point 🚪
 
 ```
 package main
+
 ```
 
 | Concept | Description |
-|---------|-------------|
+| --- | --- |
 | **Purpose** | Declares which package the file belongs to |
 | **Significance** | `main` is special - it's the executable entry point |
 | **Requirement** | Every Go file must start with a package declaration |
@@ -46,6 +50,7 @@ Building Entrance Analogy:
              │
              ▼
        Execution Path
+
 ```
 
 Just as every building needs a main entrance for people to enter, every Go program needs `package main` as its entry point.
@@ -54,12 +59,13 @@ Just as every building needs a main entrance for people to enter, every Go progr
 
 ```
 import "fmt"
+
 ```
 
 | Import Type | Syntax | Example |
-|-------------|--------|---------|
+| --- | --- | --- |
 | Single package | `import "package"` | `import "fmt"` |
-| Multiple packages | `import (` <br> `  "package1"` <br> `  "package2"` <br> `)` | `import (` <br> `  "fmt"` <br> `  "strings"` <br> `)` |
+| Multiple packages | `import (`    `"package1"`    `"package2"`  `)` | `import (`    `"fmt"`    `"strings"`  `)` |
 
 ### 🔹 What does `fmt` provide?
 
@@ -75,10 +81,11 @@ Importing a package is like installing an app on your phone. If you want to send
 func main() {
     // Code goes here
 }
+
 ```
 
 | Component | Purpose |
-|-----------|---------|
+| --- | --- |
 | `func` | Keyword to define a function |
 | `main` | Special function name recognized by Go |
 | `()` | Parameter list (empty for main) |
@@ -105,6 +112,7 @@ Program Start
       │
       ▼
  Program End
+
 ```
 
 ### 🔹 Real-world analogy 🎬
@@ -115,10 +123,11 @@ The `main()` function is like the main event at a movie theater. The movie doesn
 
 ```
 fmt.Println("Hello world!")
+
 ```
 
 | Component | Purpose |
-|-----------|---------|
+| --- | --- |
 | `fmt` | Package being accessed |
 | `.` | Package member access operator |
 | `Println` | Function that prints text and adds a new line |
@@ -127,7 +136,7 @@ fmt.Println("Hello world!")
 ### 🔹 Common Output Functions in fmt
 
 | Function | Description | Example |
-|----------|-------------|---------|
+| --- | --- | --- |
 | `Println()` | Prints with a newline at the end | `fmt.Println("Hello")` |
 | `Print()` | Prints without adding a newline | `fmt.Print("Hello")` |
 | `Printf()` | Formatted printing with placeholders | `fmt.Printf("Value: %d", 10)` |
@@ -167,12 +176,13 @@ The `fmt.Println()` function is like an alarm clock that announces its message a
 ┌─────────────────┐
 │ Program Finishes│ ◄── 5. Exits when main function completes
 └─────────────────┘
+
 ```
 
 ## 🚀 Final Summary
 
 | Component | Symbol | Purpose | Real-world Analogy |
-|-----------|--------|---------|-------------------|
+| --- | --- | --- | --- |
 | **package main** | 🚪 | Defines the program entry point | Building entrance |
 | **import "fmt"** | 📦 | Brings in external functionality | Installing an app |
 | **func main()** | ❤️ | Starting point of execution | Movie theater main event |
