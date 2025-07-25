@@ -233,7 +233,7 @@ Complete Function Flow:
 ┌─────────────────────────────────────┐
 │            Main Function            │
 ├─────────────────────────────────────┤
-│ a := 10, b := 20                   │
+│ a := 10, b := 20                    │
 │ sum := add(a, b) called             │
 └─────────────────┬───────────────────┘
                   │ Pass (10, 20)
@@ -241,18 +241,18 @@ Complete Function Flow:
 ┌─────────────────────────────────────┐
 │           Add Function              │
 ├─────────────────────────────────────┤
-│ number1 := 10   │ Memory: 0x2001   │ ◄── Parameters stored
-│ number2 := 20   │ Memory: 0x2002   │
-│ sum := 30       │ Memory: 0x2003   │ ◄── Calculation
-│ return sum      │ Value: 30        │ ◄── Return result
+│ number1 := 10   │ Memory: 0x2001    │ ◄── Parameters stored
+│ number2 := 20   │ Memory: 0x2002    │
+│ sum := 30       │ Memory: 0x2003    │ ◄── Calculation
+│ return sum      │ Value: 30         │ ◄── Return result
 └─────────────────┬───────────────────┘
                   │ Return 30
                   ▼
 ┌─────────────────────────────────────┐
 │          Back to Main               │
 ├─────────────────────────────────────┤
-│ sum := 30       │ Memory: 0x1003   │ ◄── Store returned value
-│ fmt.Println(sum) │ Output: 30      │
+│ sum := 30        │ Memory: 0x1003   │ ◄── Store returned value
+│ fmt.Println(sum) │ Output: 30       │
 └─────────────────────────────────────┘
 ```
 
