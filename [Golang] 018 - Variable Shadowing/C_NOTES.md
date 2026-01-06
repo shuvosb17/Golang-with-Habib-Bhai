@@ -30,6 +30,7 @@ func main() {
     fmt.Println(a)
 }
 ```
+<img width="1008" height="507" alt="image" src="https://github.com/user-attachments/assets/13a15039-8b2e-4ae3-819e-e92cb5a10c78" />
 
 ---
 
